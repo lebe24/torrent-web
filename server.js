@@ -14,7 +14,7 @@ var archiver = require('archiver');
 var client, url;
 
 var DIR = os.tmpdir()+'/torrent-web-poc';
-var PORT = parseArg('--port') || parseArg('-p') || process.env.PORT || 80;
+var PORT = 8080;
 
 server.listen(PORT);
 app.use(express.static(__dirname + '/public'));
